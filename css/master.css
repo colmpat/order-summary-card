@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Red Hat Display";
+  color: hsl(224, 23%, 55%);
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.content {
+  height: calc(100% - 30px);
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order-summary-card {
+  width: 400px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 18px 20px hsla(223, 47%, 23%, 20%);
+  text-align: center;
+  display: block;
+}
+.order-summary-card img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  height: auto;
+}
+.order-summary-card h1 {
+  color: hsl(223, 47%, 23%);
+  font-size: 25px;
+  font-weight: 900;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+.order-summary-card p {
+  font-size: 15px;
+  line-height: 1.4;
+  margin: 15px auto;
+  max-width: 80%;
+}
+.plan-detail {
+  width: 75%;
+  height: auto;
+  margin: 18px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plan-icon-container, .plan-button-container {
+  width: 25%;
+}
+.plan-text-stack {
+  width: 50%;
+  display: block;
+  text-align: left;
+  margin-left: 10px;
+}
+.plan-text-stack h2 {
+  font-size: 15px;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+.plan-text-stack h3 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+button {
+  margin: 0;
+  border: none;
+  font-weight: 700;
+  font-family: inherit;
+  color: inherit;
+}
+.plan-button-container button {
+  color: hsl(245, 75%, 52%);
+}
+.plan-button-container button:active {
+  color: hsl(245, 40%, 52%);
+}
+.confirmation {
+  width: 80%;
+  height: 45px;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 13px;
+  box-shadow: 0px 18px 20px hsla(223, 47%, 23%, 22%);
+  z-index: 10;
+}
+.confirmation:active {
+  background-color: hsl(245, 40%, 58%);
+}
+.cancellation {
+  z-index: 1;
+}
+.cancellation:active {
+  color: black;
+}
+.plan-icon-container img {
+  height: 100%;
+  width: auto;
+}
+.order-summary-card button {
+  display: block;
+  margin: 30px auto;
+}
+.attribution {
+  position: fixed;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 420px) {
+  .order-summary-card {
+    width: 85%;
+    min-width: 250px;
+    padding-bottom: 10px;
+  }
+  .confirmation {
+    height: 50px;
+    font-size: 14px;
+  }
+  .cancellation {
+    font-size: 14px;
+  }
+  .plan-detail {
+    width: 80%;
+  }
+  .attribution {
+    width: 250px;
+  }
+}
